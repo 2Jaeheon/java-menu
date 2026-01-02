@@ -13,7 +13,7 @@ public class Application {
         Validator validator = new Validator();
         CategoryRecommender categoryRecommender = new CategoryRecommender();
 
-        Controller controller = new Controller(inputView, outputView, validator, categoryRecommender);
+        Controller controller = new Controller(inputView, outputView, categoryRecommender);
         controller.run();
     }
 }
